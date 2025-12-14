@@ -6,7 +6,7 @@
 
 ## ER-диаграмма
 
-![ER Diagram](ER_Diagram.png)
+![ER Diagram](ER_diagram.png)
 
 *Диаграмма отображает структуру базы данных, включая таблицы и связи между ними.*
 
@@ -22,7 +22,7 @@ SElect title, rental_rate, length FROM film
 GROUP BY film_id 
 ORDER BY rental_rate DESC, length ASC;
 ```
-### Задача 2: Выберите фамилии, имена и адреса электронной почты клиентов, чьи имя и фамилия не содержат ни одной буквы «А» (латинская буква). Отсортируйте результат по customer_id  
+### Задача 2: Выберите фамилии, имена и адреса электронной почты клиентов, чьи имя и фамилия не содержат ни одной буквы «А» (латинская буква). Отсортируйте результат по customer_id.  
 ```sql
 SELECT last_name, first_name, email FROM customer 
 WHERE first_name NOT LIKE "%A%" AND last_name NOT LIKE "%A%" 
@@ -53,7 +53,7 @@ JOIN customer c ON r.customer_id = c.customer_id
 WHERE c.first_name LIKE "KATIE" AND c.last_name LIKE "ELLIOTT"
 ORDER BY f.rating = 'R' ASC, f.title ASC;
 ```
-### Задача 6: Сформируйте список фильмов в формате JSON вида {"id": 1, "title": "ACADEMY DINOSAUR", "category": "Documentary"} в таблице с одним столбцом film отсортированным по идентификатору фильма  
+### Задача 6: Сформируйте список фильмов в формате JSON вида {"id": 1, "title": "ACADEMY DINOSAUR", "category": "Documentary"} в таблице с одним столбцом film отсортированным по идентификатору фильма.  
 ```sql
 SELECT
     JSON_OBJECT (
