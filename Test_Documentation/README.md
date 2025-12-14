@@ -12,7 +12,7 @@
 
 ## Отчет о дефекте (Jira)
   
-[Открыть баг-репорт](./REST_POST_doRegister_The_email_is_incorrectly_validated.pdf)  
+[Открыть отчет о дефекте](./REST_POST_doRegister_The_email_is_incorrectly_validated.pdf)  
 
 ---
 
